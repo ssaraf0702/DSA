@@ -1,24 +1,23 @@
 #include<iostream>
-typedef long long ll;
+typedef long long ll; 
 using namespace std;
-
+ 
 int main(){
     int T;
     cin >> T;
     while(T--)
     {
-        int n;
-        int sum=0;
+        ll n;
+        ll sum=0;
         cin >> n;
-        int x = n/2;
-        ll now=8;
-  
-        for(ll i=1;i<=n;i++)
+        while((n/2)>0)
         {
-          sum+=now*i;
-          now+=8;
-         }
-    cout << (sum) << endl;
-    }   
+            sum = sum + 8*(n/2)*(n/2);
+            n = n-2; 
+        }
+        cout << sum  << endl;
+    }
+    
     return 0;
+ 
 }
