@@ -16,12 +16,15 @@ int main(){
         {
             ll x;
             cin >> x;
-             sum += x;
+            sum += x;
         }
         if(sum % X == 0){
             cout << "YES" << endl;
         }
         else{
+            if(sum/x > 0){
+                
+            }
             cout << "NO" <<endl;
         }
 
